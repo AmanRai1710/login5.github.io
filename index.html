@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login/Registration form</title>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btm"></div>
+                <button type="button" class="togle" onclick="login()">Log-In</button>
+                <button type="button" class="togle" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group">
+                <div class="text" > 
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" placeholder="user name" class="input-field" required>
+                </div>
+                <div class="text" > 
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" placeholder="password" class="input-field" required>
+            </div>
+                <button class="submit-but" type="submit">Log In</button> <br><br>
+                <h3>click on Register for New Account</h3>
+            </form>
+            <form id="register" class="input-group">
+                <div class="text" > 
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" placeholder="Enter your name" class="input-field" required>
+            </div>
+                <div class="text" > 
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" placeholder="New password" class="input-field" required>
+            </div>
+                <div class="text" > 
+                    <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                <input type="email" placeholder="New password" class="input-field" required>
+            </div>
+                <div class="text" > 
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                <input type="number" placeholder="Phone number" class="input-field" required>
+            </div>
+                <button class="submit-but" type="submit">Register</button>
+            </form>
+
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btm");
+        function register(){
+            x.style.left  = "-400px";
+            y.style.left  = "50px";
+            z.style.left  = "110px";
+        }
+        function login(){
+            x.style.left  = "50px";
+            y.style.left  = "450px";
+            z.style.left  = "0";
+        }
+    </script>
+</body>
+
+</html>
